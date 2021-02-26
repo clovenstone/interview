@@ -19,6 +19,11 @@ str = ['code', 'doce', 'ecod', 'framer', 'frame']
 Complete the function funWithAnagrams which takes a String [n]: an array of Strings.
 Expected return of a sorted String array.
 
-## 
+## Constrains:
+
+>- 0<=n<=1000
+>- 0<=m<=n
+>- 1<=length of text[i]<=1000
+>- Each string text[i] is made up of characters in the range ascii[a-z]
 
 
