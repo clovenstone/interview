@@ -11,7 +11,27 @@ public class Solution {
     }
 
     private static int solution(List<Integer> scheduledStart, List<Integer> scheduledEnd) {
-        //TODO implement your logic here.
-        return 0;
+        // TODO implement your logic here.
+
+        int maxCount = 0;
+        for (int i = 0; i < scheduledStart.size(); i++) {
+            int count = 0;
+            int end = scheduledEnd.get(i);
+            count++;
+            while (scheduledStart.contains(end)) {
+                if (scheduledStart.contains(end)) {
+                    count++;
+                    int index = scheduledStart.indexOf(end);
+                    end = scheduledEnd.get(index);
+                }
+            }
+            if (count > maxCount) {
+                maxCount = count;
+
+            }
+
+        }
+        return maxCount;
     }
+
 }

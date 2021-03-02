@@ -5,7 +5,7 @@
 --     place varchar(255) not null,
 --     review varchar(255) not null
 -- );
---
+
 -- insert into interview.reviews values (1,'Moon bucks', 'Good');
 -- insert into interview.reviews values (2,'Moon bucks', 'Bad');
 -- insert into interview.reviews values (3,'Stone cafe', 'Good');
@@ -16,3 +16,6 @@
 -- insert into interview.reviews values (8,'Cafe worst', 'Bad');
 -- insert into interview.reviews values (9,'Moon bucks', 'Good');
 
+select * from interview.reviews;
+
+select count(*) from INTERVIEW.reviews group by REVIEW having REVIEW ='Good';
